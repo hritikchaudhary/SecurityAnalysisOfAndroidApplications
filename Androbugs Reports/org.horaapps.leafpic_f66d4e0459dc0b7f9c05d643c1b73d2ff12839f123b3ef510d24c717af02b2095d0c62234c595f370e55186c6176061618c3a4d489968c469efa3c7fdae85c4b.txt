@@ -1,0 +1,409 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: org.horaapps.leafpic
+Package Version Name: v0.5.9
+Package Version Code: 12
+Min Sdk: 19
+Target Sdk: 24
+MD5   : 5c7cda4ccbe15dd41dd53f127447f606
+SHA1  : a1e905552678d257f1c858d51cc8a2e3a1a05671
+SHA256: 3245b21d5ad37aa6e6208441f06cbc1f7188d7de75f1facd860973ba85847b8d
+SHA512: cf932b350ac382afd7cc307ffba54721da212e27b69cd691443c7757be8c734e9a50888619e36a7c13a5632f8a1e0ae6014ad4665a7c85e33ce5841718854db7
+Analyze Signature: f66d4e0459dc0b7f9c05d643c1b73d2ff12839f123b3ef510d24c717af02b2095d0c62234c595f370e55186c6176061618c3a4d489968c469efa3c7fdae85c4b
+------------------------------------------------------------------------------------------------
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:78):
+               http://cipa.jp/exif/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://creativecommons.org/licenses/by-nd/3.0/
+                   => Lde/psdev/licensesdialog/licenses/CreativeCommonsAttributionNoDerivs30Unported;->getUrl()Ljava/lang/String;
+               http://creativecommons.org/licenses/by/4.0/
+                   => Lcom/mikepenz/google_material_typeface_library/GoogleMaterial;->getLicenseUrl()Ljava/lang/String;
+               http://github.com/DASAR/ShiftColorPicker
+                   => Lorg/horaapps/leafpic/activities/AboutActivity;->licenseDialog()V
+               http://github.com/PaoloRotolo/AppIntro
+                   => Lorg/horaapps/leafpic/activities/AboutActivity;->licenseDialog()V
+               http://github.com/Yalantis/uCrop
+                   => Lorg/horaapps/leafpic/activities/AboutActivity;->licenseDialog()V
+               http://github.com/bumptech/glide
+                   => Lorg/horaapps/leafpic/activities/AboutActivity;->licenseDialog()V
+               http://github.com/chrisbanes/PhotoView
+                   => Lorg/horaapps/leafpic/activities/AboutActivity;->licenseDialog()V
+               http://github.com/koush/ion
+                   => Lorg/horaapps/leafpic/activities/AboutActivity;->licenseDialog()V
+               http://github.com/mikepenz/Android-Iconics
+                   => Lorg/horaapps/leafpic/activities/AboutActivity;->licenseDialog()V
+               http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://iptc.org/std/Iptc4xmpExt/2008-02-29/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://javax.xml.XMLConstants/feature/secure-processing
+                   => Lcom/adobe/xmp/impl/XMPMetaParser;->createDocumentBuilderFactory()Ljavax/xml/parsers/DocumentBuilderFactory;
+               http://maps.google.com/maps/api/staticmap?center=%f,%f&zoom=15&size=500x300&scale=2&sensor=false
+                   => Lorg/horaapps/leafpic/util/StaticMapProvider;->getUrl(I)Ljava/lang/String;
+               http://materialdesignicons.com/
+                   => Lcom/mikepenz/community_material_typeface_library/CommunityMaterial;->getUrl()Ljava/lang/String;
+               http://ns.adobe.com/DICOM/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/StockPhoto/1.0/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/TransformXMP/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/album/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/asf/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/bwf/bext/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/camera-raw-settings/1.0/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/creatorAtom/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/exif/1.0/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPNormalizer;->touchUpDataModel(Lcom/adobe/xmp/impl/XMPMetaImpl;)V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/drew/metadata/xmp/XmpDirectory;-><clinit>()V
+               http://ns.adobe.com/exif/1.0/aux/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/drew/metadata/xmp/XmpDirectory;-><clinit>()V
+               http://ns.adobe.com/iX/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/jp2k/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/jpeg/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/pdf/1.3/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardAliases()V
+               http://ns.adobe.com/pdfx/1.3/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/photoshop/1.0/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardAliases()V
+               http://ns.adobe.com/png/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardAliases()V
+               http://ns.adobe.com/riff/info/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/swf/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/tiff/1.0/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardAliases()V
+                   => Lcom/drew/metadata/xmp/XmpDirectory;-><clinit>()V
+               http://ns.adobe.com/xap/1.0/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSerializerRDF;->checkOptionsConsistence()V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardAliases()V
+                   => Lcom/drew/metadata/xmp/XmpDirectory;-><clinit>()V
+               http://ns.adobe.com/xap/1.0/ 
+                   => Lcom/drew/metadata/xmp/XmpReader;->readJpegSegments(Ljava/lang/Iterable; Lcom/drew/metadata/Metadata;
+                    Lcom/drew/imaging/jpeg/JpegSegmentType;)V
+               http://ns.adobe.com/xap/1.0/bj/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/g/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/g/img/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/mm/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPNormalizer;->tweakOldXMP(Lcom/adobe/xmp/impl/XMPNode;)V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/rights/
+                   => Lcom/adobe/xmp/impl/XMPNormalizer;->touchUpDataModel(Lcom/adobe/xmp/impl/XMPMetaImpl;)V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardAliases()V
+               http://ns.adobe.com/xap/1.0/sType/Dimensions#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/sType/Font#
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/sType/Job#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/sType/ManifestItem#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/sType/ResourceEvent#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/sType/ResourceRef#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/sType/Version#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/t/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xap/1.0/t/pg/
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xmp/1.0/DynamicMedia/
+                   => Lcom/adobe/xmp/impl/XMPNormalizer;->touchUpDataModel(Lcom/adobe/xmp/impl/XMPMetaImpl;)V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xmp/1.0/Script/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xmp/Identifier/qual/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xmp/note/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xmp/transient/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.adobe.com/xmp/wav/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://ns.useplus.org/ldf/xmp/1.0/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://opensource.org/licenses/BSD-2-Clause
+                   => Lde/psdev/licensesdialog/licenses/BSD2ClauseLicense;->getUrl()Ljava/lang/String;
+               http://opensource.org/licenses/BSD-3-Clause
+                   => Lde/psdev/licensesdialog/licenses/BSD3ClauseLicense;->getUrl()Ljava/lang/String;
+               http://opensource.org/licenses/MIT
+                   => Lde/psdev/licensesdialog/licenses/MITLicense;->getUrl()Ljava/lang/String;
+               http://opensource.org/licenses/isc-license.txt
+                   => Lde/psdev/licensesdialog/licenses/ISCLicense;->getUrl()Ljava/lang/String;
+               http://psdev.de/LicensesDialog
+                   => Lde/psdev/licensesdialog/LicensesDialog;-><clinit>()V
+               http://purl.org/dc/1.1/
+                   => Lcom/adobe/xmp/impl/ParseRDF;->addChildNode(Lcom/adobe/xmp/impl/XMPMetaImpl; Lcom/adobe/xmp/impl/XMPNode;
+                    Lorg/w3c/dom/Node; Ljava/lang/String; Z)Lcom/adobe/xmp/impl/XMPNode;
+               http://purl.org/dc/elements/1.1/
+                   => Lcom/adobe/xmp/impl/ParseRDF;->addChildNode(Lcom/adobe/xmp/impl/XMPMetaImpl; Lcom/adobe/xmp/impl/XMPNode;
+                    Lorg/w3c/dom/Node; Ljava/lang/String; Z)Lcom/adobe/xmp/impl/XMPNode;
+                   => Lcom/adobe/xmp/impl/Utils;->isInternalProperty(Ljava/lang/String; Ljava/lang/String;)Z
+                   => Lcom/adobe/xmp/impl/XMPNormalizer;->touchUpDataModel(Lcom/adobe/xmp/impl/XMPMetaImpl;)V
+                   => Lcom/adobe/xmp/impl/XMPNormalizer;->migrateAudioCopyright(Lcom/adobe/xmp/XMPMeta; Lcom/adobe/xmp/impl/XMPNode;)V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardAliases()V
+                   => Lcom/drew/metadata/xmp/XmpDirectory;-><clinit>()V
+               http://scripts.sil.org/OFL
+                   => Lcom/mikepenz/fontawesome_typeface_library/FontAwesome;->getLicenseUrl()Ljava/lang/String;
+               http://www.aiim.org/pdfa/ns/extension/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://www.aiim.org/pdfa/ns/field#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://www.aiim.org/pdfa/ns/id/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://www.aiim.org/pdfa/ns/property#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://www.aiim.org/pdfa/ns/schema#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://www.aiim.org/pdfa/ns/type#
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://www.apache.org/licenses/LICENSE-2.0.txt
+                   => Lde/psdev/licensesdialog/licenses/ApacheSoftwareLicense20;->getUrl()Ljava/lang/String;
+               http://www.gnu.org/licenses/
+                   => Lde/psdev/licensesdialog/licenses/GnuGeneralPublicLicense20;->getUrl()Ljava/lang/String;
+                   => Lde/psdev/licensesdialog/licenses/GnuGeneralPublicLicense30;->getUrl()Ljava/lang/String;
+               http://www.gnu.org/licenses/lgpl.html
+                   => Lde/psdev/licensesdialog/licenses/GnuLesserGeneralPublicLicense3;->getUrl()Ljava/lang/String;
+               http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+                   => Lde/psdev/licensesdialog/licenses/GnuLesserGeneralPublicLicense21;->getUrl()Ljava/lang/String;
+               http://www.npes.org/pdfx/ns/id/
+                   => Lcom/adobe/xmp/impl/XMPSchemaRegistryImpl;->registerStandardNamespaces()V
+               http://xmlpull.org/v1/doc/features.html#process-namespaces
+                   => Lde/psdev/licensesdialog/NoticesXmlParser;->parse(Ljava/io/InputStream;)Lde/psdev/licensesdialog/model/Notices;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lorg/horaapps/leafpic/util/ContentHelper;->getMediaPath(Landroid/content/Context; Landroid/net/Uri;)Ljava/lang/String;
+                    (0x50) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/horaapps/leafpic/SelectAlbumBottomSheet;->toggleExplorerMode(Z)V (0x18) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning] <SSL_Security> SSL Certificate Verification Checking:
+           Please make sure this app has the conditions to check the validation of SSL Certificate. If it's not properly checked, it MAY
+           allows self-signed, expired or mismatch CN certificates for SSL connection.
+           This is a critical vulnerability and allows attackers to do MITM attacks without your knowledge.
+           If you are transmitting users' username or password, these sensitive information may be leaking.
+           Reference:
+           (1)OWASP Mobile Top 10 doc: https://www.owasp.org/index.php/Mobile_Top_10_2014-M3
+           (2)Android Security book: http://goo.gl/BFb65r
+           (3)https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=134807561
+           This vulnerability is much more severe than Apple's "goto fail" vulnerability: http://goo.gl/eFlovw
+           Please do not try to create a "X509Certificate" and override "checkClientTrusted", "checkServerTrusted", and "getAcceptedIssuers"
+           functions with blank implementation.
+           We strongly suggest you use the existing API instead of creating your own X509Certificate class.
+           Please modify or remove these vulnerable code:
+               --------------------------------------------------
+               [Maybe Vulnerable (Please manually confirm)]
+               => Lcom/koushikdutta/async/AsyncSSLSocketWrapper$1;
+                     -> used by: Lcom/koushikdutta/async/AsyncSSLSocketWrapper;-><clinit>()V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases but it's "NOT" suffering from SQLite Journal Information Disclosure Vulnerability.
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/bumptech/glide/disklrucache/DiskLruCache;->deleteIfExists(Ljava/io/File;)V (0xc) ---> Ljava/io/File;->delete()Z
+               => Lcom/bumptech/glide/disklrucache/DiskLruCache;->open(Ljava/io/File; I I J)Lcom/bumptech/glide/disklrucache/DiskLruCache;
+                    (0x64) ---> Ljava/io/File;->delete()Z
+               => Lcom/bumptech/glide/disklrucache/DiskLruCache;->rebuildJournal()V (0x1ba) ---> Ljava/io/File;->delete()Z
+               => Lcom/bumptech/glide/disklrucache/DiskLruCache;->remove(Ljava/lang/String;)Z (0x4c) ---> Ljava/io/File;->delete()Z
+               => Lcom/bumptech/glide/disklrucache/Util;->deleteContents(Ljava/io/File;)V (0x5e) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/async/util/FileCache;->removeFiles([Ljava/io/File;)V (0x14) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/async/util/FileCache;->removePartFiles(Ljava/lang/String;)V (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/async/util/FileUtility;->deleteDirectory(Ljava/io/File;)Z (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/async/util/FileUtility;->deleteDirectory(Ljava/io/File;)Z (0x4c) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/ion/BitmapCallback;->saveBitmapSnapshot(Lcom/koushikdutta/ion/Ion;
+                    Lcom/koushikdutta/ion/bitmap/BitmapInfo;)V (0x6a) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/ion/BitmapCallback;->saveBitmapSnapshot(Lcom/koushikdutta/ion/Ion;
+                    Lcom/koushikdutta/ion/bitmap/BitmapInfo;)V (0x7a) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/ion/BitmapCallback;->saveBitmapSnapshot(Lcom/koushikdutta/ion/Ion;
+                    Lcom/koushikdutta/ion/bitmap/BitmapInfo;)V (0x84) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/ion/IonRequestBuilder$8;->run()V (0x4) ---> Ljava/io/File;->delete()Z
+               => Lorg/horaapps/leafpic/data/HandlingAlbums;->unHideAlbum(Ljava/lang/String; Landroid/content/Context;)V (0x24) --->
+                    Ljava/io/File;->delete()Z
+               => Lorg/horaapps/leafpic/util/ContentHelper;->deleteFile(Landroid/content/Context; Ljava/io/File;)Z (0x4) --->
+                    Ljava/io/File;->delete()Z
+               => Lorg/horaapps/leafpic/util/ContentHelper;->isWritable(Ljava/io/File;)Z (0x26) ---> Ljava/io/File;->delete()Z
+               => Lorg/horaapps/leafpic/util/ContentHelper;->rmdir(Landroid/content/Context; Ljava/io/File;)Z (0x36) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/exoplayer/upstream/cache/CacheDataSink;->closeCurrentOutputStream()V (0x56) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/exoplayer/upstream/cache/CacheDataSink;->closeCurrentOutputStream()V (0x8a) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/exoplayer/upstream/cache/SimpleCache;->initialize()V (0x4c) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/exoplayer/upstream/cache/SimpleCache;->initialize()V (0x6c) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/exoplayer/upstream/cache/SimpleCache;->commitFile(Ljava/io/File;)V (0x54) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/exoplayer/upstream/cache/SimpleCache;->removeSpan(Lcom/google/android/exoplayer/upstream/cache/CacheSp
+                    an;)V (0x36) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/async/http/AsyncHttpClient$9$2;->onCompleted(Ljava/lang/Exception;)V (0x1c) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/async/http/AsyncHttpClient$9;->onConnectCompleted(Ljava/lang/Exception;
+                    Lcom/koushikdutta/async/http/AsyncHttpResponse;)V (0x12) ---> Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/async/util/FileCache$InternalCache;->entryRemoved(Z Ljava/lang/String;
+                    Lcom/koushikdutta/async/util/FileCache$CacheEntry; Lcom/koushikdutta/async/util/FileCache$CacheEntry;)V (0x2a) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/ion/FileCacheStore$1$1;->onCompleted(Ljava/lang/Exception;)V (0x12) ---> Ljava/io/File;->delete()Z
+               => Lokhttp3/internal/io/FileSystem$1;->delete(Ljava/io/File;)V (0x0) ---> Ljava/io/File;->delete()Z
+               => Lokhttp3/internal/io/FileSystem$1;->deleteContents(Ljava/io/File;)V (0x5c) ---> Ljava/io/File;->delete()Z
+               => Lcom/drew/tools/ProcessAllImagesInFolderUtility$TextFileOutputHandler;->deleteRecursively(Ljava/io/File;)V (0x5e) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/drew/tools/ProcessAllImagesInFolderUtility$TextFileOutputHandler;->deleteRecursively(Ljava/io/File;)V (0x66) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/koushikdutta/async/http/AsyncHttpClient$8;->cancelCleanup()V (0x44) ---> Ljava/io/File;->delete()Z
+[Notice]  AndroidManifest Exported Components Checking 2:
+           Found "exported" components(except for Launcher) for receiving Google's "Android" actions (AndroidManifest.xml):
+                 activity => org.horaapps.leafpic.activities.PlayerActivity
+                 activity => org.horaapps.leafpic.activities.MainActivity
+                 activity => org.horaapps.leafpic.activities.SingleMediaActivity
+                 activity => org.horaapps.leafpic.activities.SettingsActivity
+                 activity => org.horaapps.leafpic.activities.AboutActivity
+                 activity => org.horaapps.leafpic.activities.SecurityActivity
+                 activity => org.horaapps.leafpic.activities.DonateActivity
+                 activity => org.horaapps.leafpic.activities.ExcludedAlbumsActivity
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" because your set minSdk >= 11.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info] <Sensitive_Information> Getting ANDROID_ID:
+           Did not detect this app is getting the 64-bit number "Settings.Secure.ANDROID_ID".
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView> WebView Local File Access Attacks Checking:
+           Did not find potentially critical local file access settings.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 12.214181 secs
+Total elapsed time: 48.070357 secs
