@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="it.fossoft.timberfoss">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:label="Timber" android:name="com.naman14.timber.TimberApp" android:supportsRtl="true" android:theme="@style/AppTheme.FullScreen.Light">
+        <activity android:label="Timber" android:name="com.naman14.timber.activities.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.CATEGORY_APP_MUSIC"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.naman14.timber.activities.SettingsActivity" android:theme="@style/AppThemeNormalLight"/>
+        <activity android:name="com.naman14.timber.activities.PlaylistDetailActivity" android:theme="@style/AppTheme.FullScreen.Light"/>
+        <activity android:name="com.naman14.timber.activities.SearchActivity" android:theme="@style/AppThemeNormalLight"/>
+        <activity android:name="com.naman14.timber.activities.NowPlayingActivity" android:theme="@style/AppTheme.FullScreen.Light"/>
+        <activity android:name="com.naman14.timber.activities.DonateActivity"/>
+        <receiver android:name="com.naman14.timber.helpers.MediaButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/app_name" android:name="com.naman14.timber.MusicService" android:process=":main"/>
+        <service android:exported="true" android:name="com.naman14.timber.WearBrowserService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+        <receiver android:label="@string/widget_standard" android:name="com.naman14.timber.widgets.desktop.StandardWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.naman14.timber.metachanged"/>
+                <action android:name="com.naman14.timber.playstatechanged"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_standard"/>
+        </receiver>
+        <receiver android:label="@string/widget_white" android:name="com.naman14.timber.widgets.desktop.WhiteWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.naman14.timber.metachanged"/>
+                <action android:name="com.naman14.timber.playstatechanged"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_white"/>
+        </receiver>
+        <receiver android:label="@string/widget_small" android:name="com.naman14.timber.widgets.desktop.SmallWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.naman14.timber.metachanged"/>
+                <action android:name="com.naman14.timber.playstatechanged"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_small"/>
+        </receiver>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="2.0.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+</manifest>
